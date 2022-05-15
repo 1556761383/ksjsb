@@ -1,5 +1,5 @@
 /**
- * 脚本地址: https://raw.githubusercontent.com/yuexx94/ksjsb/main/ksjsb_db3000.js
+ * 脚本地址: https://raw.githubusercontent.com/yuexx94/ksjsb/main/ksjsb_zccx.js
 
  * 转载请留信息,谢谢
  * 
