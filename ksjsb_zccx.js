@@ -1,5 +1,6 @@
 /**
- * 脚本地址: https://raw.githubusercontent.com/yml2213/javascript/master/ksjsb/ksjsb.js
+ * 脚本地址: https://raw.githubusercontent.com/yuexx94/ksjsb/main/ksjsb_db3000.js
+
  * 转载请留信息,谢谢
  * 
  * 快手极速版  请使用完整版ck
