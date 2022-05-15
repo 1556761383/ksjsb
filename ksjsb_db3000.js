@@ -1,10 +1,11 @@
 /**
- * 脚本地址: https://raw.githubusercontent.com/yml2213/javascript/master/ksjsb/ksjsb.js
+ * 脚本地址: https://raw.githubusercontent.com/yuexx94/ksjsb/main/ksjsb_db3000.js
  * 转载请留信息,谢谢
  * 
  * 快手极速版  请使用完整版ck
  * 
- * cron 05 7-18 * * *  yml2213_javascript_master/ksjsb.js
+ * 定时
+ * cron 05 7-18 * * *  https://raw.githubusercontent.com/yuexx94/ksjsb/main/ksjsb_db3000.js
  * 
  * 5.15	完成签到、宝箱、分享
 
@@ -24,7 +25,7 @@ let ck = "";
 let usre_name;
 
 ///////////////////////////////////////////////////////////////////
-let Version = '\nBasic allowance 1.0 \n'
+let Version = '\n Basic allowance 1.0 \n'
 let test = `签到、宝箱、分享 请使用完整版ck \n`
 ///////////////////////////////////////////////////////////////////
 
