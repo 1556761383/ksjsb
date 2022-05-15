@@ -32,7 +32,6 @@ let test = `签到、宝箱、分享 请使用完整版ck \n`
 async function tips(ckArr) {
 	console.log(`${Version}`);
 	msg += `${Version}`
-
 	console.log(test);
 	msg += `${test}`
 	console.log(`****************************************\n`);
