@@ -15,6 +15,7 @@
  * 神秘代码: aHR0cHM6Ly90Lm1lL3ltbF90Zw==
  */
 const $ = new Env("快手极速版低保");
+
 const notify = $.isNode() ? require("./sendNotify") : "";
 const Notify = 1 		//0为关闭通知，1为打开通知,默认为1
 const debug = 0 		//0为关闭调试，1为打开调试,默认为0
@@ -25,18 +26,19 @@ let ck = "";
 let usre_name;
 
 ///////////////////////////////////////////////////////////////////
-let Version = '\n Basic allowance 1.0 \n'
+let Version = '\nBasic allowance 1.0 \n'
 let test = `签到、宝箱、分享 请使用完整版ck \n`
 ///////////////////////////////////////////////////////////////////
 
 async function tips(ckArr) {
+
 	console.log(`${Version}`);
 	msg += `${Version}`
+
 	console.log(test);
 	msg += `${test}`
 	console.log(`****************************************\n`);
-	msg += `****************************************`;
-	
+         msg += `****************************************\n`;
 	//await wyy();
 
 	console.log(`共执行【${ckArr.length}】个账号，执行时间: ${new Date(
@@ -65,9 +67,11 @@ async function tips(ckArr) {
 
 	}
 
-	console.log(`========== 资产查询 ==========\n`);
-	msg += `========== 账户统计 ==========\n`;
-	for (let index = 0; index < ckArr.length; inde x++) {
+	console.log(`==========资产查询==========\n`);
+
+         msg+= `==========资产查询==========\n`;
+
+	for (let index = 0; index < ckArr.length; index++) {
 		let num = index + 1;
 		ck = ckArr[index].split("&");
 		await action_result();
@@ -94,7 +98,7 @@ async function action_result() {
 	if (result.result == 1) {
 		console.log(`【${result.data.userData.nickname}】   账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`);
 		usre_name = result.data.userData.nickname;
-		msg += `【${result.data.userData.nickname}】   账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`;
+		msg += `【${result.data.userData.nickname}】账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`;
 	} 
 }
 
@@ -143,6 +147,8 @@ async function user_info() {
 
 
 		console.log(`==========【${result.data.userData.nickname}】==========\n`);
+ 
+                  msg += `==========【${result.data.userData.nickname}】==========\n`;
 
 		console.log(`账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`);
 		usre_name = result.data.userData.nickname;
