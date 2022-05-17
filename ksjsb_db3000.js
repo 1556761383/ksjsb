@@ -35,6 +35,8 @@ async function tips(ckArr) {
 	console.log(test);
 	msg += `${test}`
 	console.log(`****************************************\n`);
+	msg += `****************************************`
+	
 	//await wyy();
 
 	console.log(`共执行【${ckArr.length}】个账号，执行时间: ${new Date(
@@ -63,8 +65,9 @@ async function tips(ckArr) {
 
 	}
 
-	console.log(`==========资产查询==========\n`);
-	for (let index = 0; index < ckArr.length; index++) {
+	console.log(`========== 资产查询 ==========\n`);
+	msg += `========== 账户统计 ==========\n`;
+	for (let index = 0; index < ckArr.length; inde x++) {
 		let num = index + 1;
 		ck = ckArr[index].split("&");
 		await action_result();
@@ -91,7 +94,7 @@ async function action_result() {
 	if (result.result == 1) {
 		console.log(`【${result.data.userData.nickname}】   账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`);
 		usre_name = result.data.userData.nickname;
-		msg += `账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`;
+		msg += `【${result.data.userData.nickname}】   账户余额: ${result.data.totalCash}元 、${result.data.totalCoin}金币 \n`;
 	} 
 }
 
