@@ -44,6 +44,10 @@ async function tips(ckArr) {
 	console.log(`共执行【${ckArr.length}】个账号，执行时间: ${new Date(
 		new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000
 	).toLocaleString()} \n`);
+	
+	 msg += `共执行【${ckArr.length}】个账号，执行时间: ${new Date(
+		new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000
+	).toLocaleString()} \n`;
 
 	//console.log(`\n共 ${ckArr.length} 个账号 \n`);
 	debugLog(`【debug】 这是你的账号数组:\n ${ckArr}`);
